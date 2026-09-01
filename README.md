@@ -7,3 +7,6 @@ Write the proposal + why feature, why method for this model (non-technical docum
 Submit the code on Python/R/SQL...
 
 Upload eveything on README
+
+## Team
+Mai - This is a group work - in-class exercise 2
