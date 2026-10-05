@@ -43,7 +43,7 @@ Rows are actual labels and columns are predicted labels. In each row below, TN m
 
 All matrices total 16,281. Raw predictions (`outputs/test_predictions.csv`, generated when the analysis runs) permit independent recalculation. Run manifest (`outputs/run_manifest.json`, generated when the analysis runs) records versions, seeds, data hashes and checks.
 
-##Individual Prediction
+## Individual Prediction
 | Feature | Value | Contribution |
 |---|---|---|
 | age | 28 | -0.10842 |
