@@ -42,3 +42,20 @@ Rows are actual labels and columns are predicted labels. In each row below, TN m
 | Random forest | 11808 | 627 | 1572 | 2274 |
 
 All matrices total 16,281. Raw predictions (`outputs/test_predictions.csv`, generated when the analysis runs) permit independent recalculation. Run manifest (`outputs/run_manifest.json`, generated when the analysis runs) records versions, seeds, data hashes and checks.
+
+##Individual Prediction
+| Feature | Value | Contribution |
+|---|---|---|
+| age | 28 | -0.10842 |
+| marital_status | Married-civ-spouse | +0.09789 |
+| relationship | Husband | +0.07300 |
+| workclass | Local-gov | +0.06953 |
+| occupation | Protective-serv | +0.05181 |
+| capital_gain | 0 | -0.02459 |
+| hours_per_week | 40 | -0.01703 |
+| sex | Male | +0.01429 |
+| education_num | 12 | +0.01170 |
+| capital_loss | 0 | -0.00899 |
+| native_country | United-States | +0.00207 |
+| race | White | +0.00139 |
+| **Total** | | **+0.16265** |
