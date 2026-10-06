@@ -33,11 +33,11 @@ The saved tables can be read without running anything. A new run recreates CSV a
 
 ## Main findings
 
-On the separate 16,281-record test file, logistic regression reached 84.9% accuracy and 0.647 F1. The random forest reached 86.5% accuracy and 0.674 F1. The forest performed better overall, but still missed 40.9% of the higher-income records.
+1. On the separate 16,281-record test file, logistic regression reached 84.9% accuracy and 0.647 F1. The random forest reached 86.5% accuracy and 0.674 F1. The forest performed better overall, but still missed 40.9% of the higher-income records.
 
-F1 is the main comparison metric because higher-income records are the minority. Accuracy, precision, recall, and confusion matrices are included so the tradeoffs remain visible. The forest settings were chosen using validation data, with the classification threshold fixed at 0.50.
+2. F1 is the main comparison metric because higher-income records are the minority. Accuracy, precision, recall, and confusion matrices are included so the tradeoffs remain visible. The forest settings were chosen using validation data, with the classification threshold fixed at 0.50.
 
-Removing capital gains and losses reduced test F1 from 0.674 to 0.610. This checks a possible prediction-time availability issue; it does not prove those fields are always leakage. Recall also differed across sex and race groups. These are historical patterns in the dataset, not causal conclusions about people.
+3. Removing capital gains and losses reduced test F1 from 0.674 to 0.610. This checks a possible prediction-time availability issue; it does not prove those fields are always leakage. Recall also differed across sex and race groups. These are historical patterns in the dataset, not causal conclusions about people.
 
 ## Sources and scope
 
