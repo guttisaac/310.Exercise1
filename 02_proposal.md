@@ -1,9 +1,5 @@
 # Adult income prediction project proposal
 
-**DSDA 310 Project 1**
-
-This updated plan documents the completed analysis through the September 29 milestone. It was revised on October 3, 2026. The original proposal is preserved in the cleanup ZIP beside this project folder; the new split and leakage hypothesis are not represented as decisions made in early September.
-
 ## Problem and dataset
 
 Predict whether an individual's annual income is above $50K (positive class, 1) or at/below $50K (0). One record represents one person. This is binary classification of historical income, not a causal model of pay or an assessment of a person's worth. The local UCI Adult files contain 32,561 development and 16,281 test records, totaling 48,842.
@@ -25,8 +21,6 @@ These are modeling judgments informed by the [UCI dataset description](https://a
 | native_country | Keep as a categorical context variable, while recognizing possible demographic proxy effects and small categories. |
 | fnlwgt | Exclude as a predictor. It is a survey weight, not a person's income or an intrinsic personal characteristic. Report unweighted record-level performance, not population-weighted estimates. |
 | income | Target only; never an input. |
-
-[Kohavi's 1996 study](https://cdn.aaai.org/KDD/1996/KDD96-033.pdf) analyzes tree-based and probabilistic learning and uses Adult as a prediction task. It provides historical context for comparing model families; it does not validate our particular forest settings. [Ding et al.](https://arxiv.org/abs/2108.04884) identify external-validity limits in Adult, supporting caution about generalizing this classroom benchmark to current populations.
 
 ## Cleaning and validation design
 
