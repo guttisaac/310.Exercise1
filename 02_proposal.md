@@ -20,7 +20,7 @@ These are modeling judgments informed by the [UCI dataset description](https://a
 | sex and race | Include in the full academic benchmark so dependence can be audited; compare with a retrained model excluding both. Retain raw values for group evaluation either way. |
 | native_country | Keep as a categorical context variable, while recognizing possible demographic proxy effects and small categories. |
 | fnlwgt | Exclude as a predictor. It is a survey weight, not a person's income or an intrinsic personal characteristic. Report unweighted record-level performance, not population-weighted estimates. |
-| income | Target only; never an input. |
+| income | Target only; never an input. |`
 
 ## Cleaning and validation design
 
