@@ -2,8 +2,6 @@
 
 This project uses the UCI Adult dataset to predict whether a person's annual income is above $50,000. It compares logistic regression with a random forest, explains the predictions, and checks where the model makes mistakes.
 
-The folder covers the assignment through **September 29: Evaluation and failure analysis**. The completion work was done on October 3, 2026; it is not backdated.
-
 
 | File | What it contains |
 | --- | --- |
@@ -30,15 +28,6 @@ python -m pip install numpy==2.2.4 pandas==2.2.3 scikit-learn==1.9.1
 python analysis.py
 python verify_results.py
 ```
-
-To open the notebook in the same environment:
-
-```sh
-python -m pip install notebook ipykernel
-python -m notebook notebook.ipynb
-```
-
-Select the environment's Python kernel, then restart the kernel and run all cells. Allow a few minutes for training and feature importance. The notebook calls the same code as `analysis.py`.
 
 The saved tables can be read without running anything. A new run recreates CSV and JSON outputs in `outputs/`, plus explanation figures and data in `explainability/`. Run the analysis before running `verify_results.py` by itself. Running the analysis also rewrites the results, evaluation, explanation, and executive-summary reports using the text in `analysis.py`.
 
