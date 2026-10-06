@@ -29,7 +29,7 @@ python analysis.py
 python verify_results.py
 ```
 
-The saved tables can be read without running anything. A new run recreates CSV and JSON outputs in `outputs/`, plus explanation figures and data in `explainability/`. Run the analysis before running `verify_results.py` by itself. Running the analysis also rewrites the results, evaluation, explanation, and executive-summary reports using the text in `analysis.py`.
+The saved tables can be read without running anything. A new run recreates CSV and JSON outputs in `outputs/`, plus explanation figures and data in `explainability/`. Run the analysis before running `verify_results.py` by itself. Running the analysis also rewrites the results, evaluation, explanation, and executive-summary reports. 'FinalModelSetup.py' defines the functions of our finished regression and forest models, 'FinalAnalysis.ipynb' is the analysis of those models. '01Tree_model' and 01_Baseline_Logistic_Regression' are both first attempts of the models and were replaced by the 'Final' files.
 
 ## Main findings
 
