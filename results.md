@@ -43,6 +43,27 @@ Rows are actual labels and columns are predicted labels. In each row below, TN m
 
 All matrices total 16,281. Raw predictions (`outputs/test_predictions.csv`, generated when the analysis runs) permit independent recalculation. Run manifest (`outputs/run_manifest.json`, generated when the analysis runs) records versions, seeds, data hashes and checks.
 
+## Linear Regression at Different Thresholds
+| Threshold | split | n | accuracy | precision | recall | f1 |
+| --- | --- | --- | --- | --- | --- | --- |
+| 0.3 | train | 26049 | 0.8214 | 0.6421 | 0.7654 | 0.6642 |
+| 0.3 | validation | 6512 | 0.8201 | 0.6378 | 0.7681 | 0.6721 |
+| 0.5 | train | 26049 | 0.8489 | 0.7297 | 0.5916 | 0.6534 |
+| 0.5 | validation | 6512 | 0.8606 | 0.7531 | 0.6263 | 0.6838 |
+| 0.7 | train | 26049 | 0.8392 | 0.8477 | 0.4311 | 0.5372 |
+| 0.7 | validation | 6512 | 0.8392 | 0.8477 | 0.4049 | 0.5481 |
+
+## Random Forest at Different Thresholds
+| Threshold | split | n | accuracy | precision | recall | f1 |
+| --- | --- | --- | --- | --- | --- | --- |
+| 0.3 | train | 26049 | 0.8624 | 0.7019 | 0.8451 | 0.6444 |
+| 0.3 | validation | 6512 | 0.8401 | 0.6878 | 0.8314 | 0.6411 |
+| 0.5 | train | 26049 | 0.8791 | 0.8281 | 0.6282 | 0.7145 |
+| 0.5 | validation | 6512 | 0.8745 | 0.8106 | 0.6250 | 0.7058 |
+| 0.7 | train | 26049 | 0.8592 | 0.8977 | 0.4166 | 0.6372 |
+| 0.7 | validation | 6512 | 0.8392 | 0.8464 | 0.4511 | 0.6811 |
+
+
 ## Individual Prediction
 | Feature | Value | Contribution |
 |---|---|---|
@@ -59,3 +80,5 @@ All matrices total 16,281. Raw predictions (`outputs/test_predictions.csv`, gene
 | native_country | United-States | +0.00207 |
 | race | White | +0.00139 |
 | **Total** | | **+0.16265** |
+
+
