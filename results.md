@@ -43,25 +43,25 @@ Rows are actual labels and columns are predicted labels. In each row below, TN m
 
 All matrices total 16,281. Raw predictions (`outputs/test_predictions.csv`, generated when the analysis runs) permit independent recalculation. Run manifest (`outputs/run_manifest.json`, generated when the analysis runs) records versions, seeds, data hashes and checks.
 
-## Linear Regression at Different Thresholds
+## Logistic Regression at Different Thresholds
 | Threshold | split | n | accuracy | precision | recall | f1 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 0.3 | train | 26049 | 0.8214 | 0.6421 | 0.7654 | 0.6642 |
-| 0.3 | validation | 6512 | 0.8201 | 0.6378 | 0.7681 | 0.6721 |
+| 0.3 | train | 26049 | 0.8314 | 0.6221 | 0.7654 | 0.6942 |
+| 0.3 | validation | 6512 | 0.8401 | 0.6378 | 0.7811 | 0.7121 |
 | 0.5 | train | 26049 | 0.8489 | 0.7297 | 0.5916 | 0.6534 |
 | 0.5 | validation | 6512 | 0.8606 | 0.7531 | 0.6263 | 0.6838 |
-| 0.7 | train | 26049 | 0.8392 | 0.8477 | 0.4311 | 0.5372 |
-| 0.7 | validation | 6512 | 0.8392 | 0.8477 | 0.4049 | 0.5481 |
+| 0.7 | train | 26049 | 0.8392 | 0.8477 | 0.4011 | 0.5562 |
+| 0.7 | validation | 6512 | 0.8542 | 0.8517 | 0.4549 | 0.5981 |
 
 ## Random Forest at Different Thresholds
 | Threshold | split | n | accuracy | precision | recall | f1 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 0.3 | train | 26049 | 0.8624 | 0.7019 | 0.8451 | 0.6444 |
-| 0.3 | validation | 6512 | 0.8401 | 0.6878 | 0.8314 | 0.6411 |
+| 0.3 | train | 26049 | 0.8714 | 0.6912 | 0.8451 | 0.7518 |
+| 0.3 | validation | 6512 | 0.8421 | 0.6484 | 0.7861 | 0.7006 |
 | 0.5 | train | 26049 | 0.8791 | 0.8281 | 0.6282 | 0.7145 |
 | 0.5 | validation | 6512 | 0.8745 | 0.8106 | 0.6250 | 0.7058 |
-| 0.7 | train | 26049 | 0.8592 | 0.8977 | 0.4166 | 0.6372 |
-| 0.7 | validation | 6512 | 0.8392 | 0.8464 | 0.4511 | 0.6811 |
+| 0.7 | train | 26049 | 0.8542 | 0.8977 | 0.4066 | 0.5504 |
+| 0.7 | validation | 6512 | 0.8398 | 0.8615 | 0.3981 | 0.5342 |
 
 
 ## Individual Prediction
